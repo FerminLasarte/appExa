@@ -1,0 +1,21 @@
+﻿<Window x:Class="appExa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:appExa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+        <StackPanel VerticalAlignment="Center">
+                <Label x:Name="nameLabel" Content="" FontWeight="Bold"/>
+                <Grid>
+                        <Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Width="50px" Content = "Usuario: "/>
+                        <TextBox Grid.Column="1" Grid.Row="0" x:Name="Input" Width="350px"/>
+                </Grid>
+                <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="botonIngresar" Padding="5px" Click="Boton_OnClick">
+                        <Button.Margin>
+                                <Thickness Top="10" Bottom="10"/>
+                        </Button.Margin>
+                </Button>
+        </StackPanel>
+</Window>
