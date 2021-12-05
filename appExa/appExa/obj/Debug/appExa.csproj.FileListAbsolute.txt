@@ -45,3 +45,5 @@ D:\juanm\Documents\appExa\appExa\appExa\obj\Debug\appExa.exe
 D:\juanm\Documents\appExa\appExa\appExa\obj\Debug\appExa.pdb
 D:\juanm\Documents\appExa\appExa\appExa\obj\Debug\Ventana1.g.cs
 D:\juanm\Documents\appExa\appExa\appExa\obj\Debug\Ventana1.baml
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Ventana1.g.cs
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Ventana1.baml

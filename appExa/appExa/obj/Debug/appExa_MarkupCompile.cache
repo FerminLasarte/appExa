@@ -4,12 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\
+=======
+<<<<<<< HEAD
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\
+=======
+C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\
+>>>>>>> 19b96ceb15c2752a9235b7e85746e0b45e9d24f6
+>>>>>>> Stashed changes
 appExa
 none
 false
 DEBUG;TRACE
+<<<<<<< Updated upstream
 C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\App.xaml
+=======
+<<<<<<< HEAD
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\App.xaml
+=======
+C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\App.xaml
+>>>>>>> 19b96ceb15c2752a9235b7e85746e0b45e9d24f6
+>>>>>>> Stashed changes
 2-1045689850
 
 51953347803
