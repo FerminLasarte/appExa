@@ -7,7 +7,9 @@ namespace appExa
     /// </summary>
     public partial class MainWindow
     {
-        private string Name = "";
+        
+        private const string User = "root";
+        private const string Contrasena = "toor";
         
         public MainWindow()
         {
@@ -16,20 +18,15 @@ namespace appExa
 
         private void Boton_OnClick(object sender, RoutedEventArgs e)
         {
-            Name = Usuario.Text;
-            NameLabel.Content = $"hola, {Name.ToString()}";
+            if ((Usuario.Text == User) && (Contrasena ==  PasswordBox.Password))
+            {
+                NameLabel.Content = $"hola, {Usuario.Text.ToString()}";
+                Ventana1 ventana = new Ventana1();
+                ventana.Show();
+            }
+            
         }
         
-        private void passwordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            if (PasswordBox.Password == "Password")
-            {
-                StatusText.Text = "'Password' is not allowed as a password.";
-            }
-            else
-            {
-                StatusText.Text = string.Empty;
-            }
-        }
+
     }
 }

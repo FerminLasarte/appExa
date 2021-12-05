@@ -14,7 +14,7 @@
                 </Grid>
                 <Grid>
                         <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="70px" Content = "Contraseña: "/>
-                        <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px" MaxLength="16" PasswordChanged="passwordBox_PasswordChanged"/>
+                        <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px"/>
                         <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
                 </Grid>
                 <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="Boton_OnClick">
