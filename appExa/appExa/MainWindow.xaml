@@ -7,12 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
         <StackPanel VerticalAlignment="Center">
-                <Label x:Name="nameLabel" Content="" FontWeight="Bold"/>
+                <Label x:Name="NameLabel" Content="" FontWeight="Bold"/>
                 <Grid>
-                        <Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Width="50px" Content = "Usuario: "/>
-                        <TextBox Grid.Column="1" Grid.Row="0" x:Name="Input" Width="350px"/>
+                        <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="50px" Content = "Usuario: "/>
+                        <TextBox Grid.Column="0" Grid.Row="0" x:Name="Usuario" Height="20px" Width="350px"/>
                 </Grid>
-                <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="botonIngresar" Padding="5px" Click="Boton_OnClick">
+                <Grid>
+                        <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="70px" Content = "Contraseña: "/>
+                        <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px" MaxLength="16" PasswordChanged="passwordBox_PasswordChanged"/>
+                        <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
+                </Grid>
+                <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="Boton_OnClick">
                         <Button.Margin>
                                 <Thickness Top="10" Bottom="10"/>
                         </Button.Margin>

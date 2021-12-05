@@ -16,8 +16,20 @@ namespace appExa
 
         private void Boton_OnClick(object sender, RoutedEventArgs e)
         {
-            Name = Input.Text;
-            nameLabel.Content = $"hola, {Name.ToString()}";
+            Name = Usuario.Text;
+            NameLabel.Content = $"hola, {Name.ToString()}";
+        }
+        
+        private void passwordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (PasswordBox.Password == "Password")
+            {
+                StatusText.Text = "'Password' is not allowed as a password.";
+            }
+            else
+            {
+                StatusText.Text = string.Empty;
+            }
         }
     }
 }
