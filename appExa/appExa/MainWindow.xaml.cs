@@ -71,9 +71,6 @@ namespace appExa
                 Ventana1 ventana = new Ventana1();
                 ventana.Show();
             }
-            
         }
-        
-
     }
 }
