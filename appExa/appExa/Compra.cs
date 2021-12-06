@@ -15,9 +15,11 @@ namespace appExa
 
         public void borrarPos(int pos)
         {
-            if (pos < _articulos.Count) {
+            if (pos < _articulos.Count)
+            {
                 _precio -= _articulos[pos].precio;
                 _articulos.RemoveAt(pos);
             }
+        }
     }
 }
