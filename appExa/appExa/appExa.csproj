@@ -50,6 +50,8 @@
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
         </ApplicationDefinition>
+        <Compile Include="Articulo.cs" />
+        <Compile Include="Compra.cs" />
         <Compile Include="Ventana1.xaml.cs">
           <DependentUpon>Ventana1.xaml</DependentUpon>
         </Compile>
