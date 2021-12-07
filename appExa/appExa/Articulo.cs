@@ -7,20 +7,13 @@ namespace appExa
         private int _precio;
         private bool _disponible;
         private int _disponibles;
-        public string nombre
+        public Articulo(string nombre, string categoria, int precio)
         {
-            get { return _nombre; }
-            set { _nombre = value; }
-        }
-        public string categoria
-        {
-            get { return _categoria; }
-            set { _categoria = value; }
-        }
-        public int precio
-        {
-            get { return _precio; }
-            set { _precio = value; }
+            _nombre = nombre;
+            _categoria = categoria;
+            _precio = precio;
+            _disponible = true;
+            _disponibles = 0;
         }
         public bool disponible
         {
