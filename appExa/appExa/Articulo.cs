@@ -6,7 +6,7 @@ namespace appExa
         private string _categoria;
         private int _precio;
         private bool _disponible;
-
+        private int _disponiubleSStock;
         public string nombre
         {
             get { return _nombre; }
