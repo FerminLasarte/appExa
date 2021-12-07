@@ -1,11 +1,11 @@
-﻿<Window x:Class="appExa.MainWindow"
+<Window x:Class="appExa.Principal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:appExa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Principal" Height="450" Width="800">
     <StackPanel VerticalAlignment="Center">
         <Label x:Name="NameLabel" Content="" FontWeight="Bold"/>
         <Grid>
@@ -17,18 +17,16 @@
             <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px"/>
             <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
         </Grid>
-        <Button HorizontalAlignment="Center" Content="Registrarse" x:Name="BotonRegistrar" Padding="5px" Click="Boton_OnClick">
-                <Button.Margin>
-                    <Thickness Top="10" Bottom="10"/>
-                </Button.Margin>
-            </Button>
-            <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="BotonIngresar_OnClick">
-                <Button.Margin>
-                    <Thickness Top="10" Bottom="10"/>
-                </Button.Margin>
-            </Button>
+        <Button HorizontalAlignment="Center" Content="Registrarse" x:Name="BotonRegistrar" Padding="5px">
+            <Button.Margin>
+                <Thickness Top="10" Bottom="10"/>
+            </Button.Margin>
+        </Button>
+        <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px">
+            <Button.Margin>
+                <Thickness Top="10" Bottom="10"/>
+            </Button.Margin>
+        </Button>
     </StackPanel>
-    <!-- <Window.Background>
-        <ImageBrush ImageSource=></ImageBrush>
-    </Window.Background> -->
 </Window>
+

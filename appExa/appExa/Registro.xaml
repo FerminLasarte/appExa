@@ -27,7 +27,7 @@
         </Grid>
         <Grid>
             <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="130px" Content = "Confirmar Contraseña: "/>
-            <PasswordBox x:Name="ConfirmPasswordBox" Height="20px" Width="350px"/>
+            <PasswordBox x:Name="ConfirmPasswordBox" Height="20px" Width="350px" />
             <TextBlock x:Name="ConfirmStatusText" Margin="10" HorizontalAlignment="Center"/>
         </Grid>
         <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="BotonIngresar_OnClick">
@@ -36,4 +36,7 @@
             </Button.Margin>
         </Button>
     </StackPanel>
+    <!-- <Window.Background>
+        <ImageBrush ImageSource=""/>
+    </Window.Background> -->
 </Window>

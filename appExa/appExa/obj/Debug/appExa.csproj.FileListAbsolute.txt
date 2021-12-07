@@ -68,3 +68,5 @@ C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa.g.resource
 C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa.Properties.Resources.resources
 C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa.csproj.GenerateResource.cache
 C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa.csproj.CoreCompileInputs.cache
+C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa_Content.g.cs
+C:\Users\tomas\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Principal.g.cs
