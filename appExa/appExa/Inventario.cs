@@ -6,6 +6,6 @@ namespace appExa
     {
         private Articulo[] _datos;
 
-        
+        algo
     }
 }
