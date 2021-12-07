@@ -23,6 +23,7 @@ namespace appExa
                 comando.ExecuteNonQuery();
                 sqlCon.Close();
                 this.Close();
+                aaa
             }
         }
     }
