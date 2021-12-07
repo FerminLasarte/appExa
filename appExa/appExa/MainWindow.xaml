@@ -6,21 +6,26 @@
         xmlns:local="clr-namespace:appExa"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-        <StackPanel VerticalAlignment="Center">
-                <Label x:Name="NameLabel" Content="" FontWeight="Bold"/>
-                <Grid>
-                        <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="50px" Content = "Usuario: "/>
-                        <TextBox Grid.Column="0" Grid.Row="0" x:Name="Usuario" Height="20px" Width="350px"/>
-                </Grid>
-                <Grid>
-                        <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="70px" Content = "Contraseña: "/>
-                        <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px"/>
-                        <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
-                </Grid>
-                <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="Boton_OnClick">
-                        <Button.Margin>
-                                <Thickness Top="10" Bottom="10"/>
-                        </Button.Margin>
-                </Button>
-        </StackPanel>
+    <StackPanel VerticalAlignment="Center">
+        <Label x:Name="NameLabel" Content="" FontWeight="Bold"/>
+        <Grid>
+            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="50px" Content = "Usuario: "/>
+            <TextBox Grid.Column="0" Grid.Row="0" x:Name="Usuario" Height="20px" Width="350px"/>
+        </Grid>
+        <Grid>
+            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="70px" Content = "Contraseña: "/>
+            <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px"/>
+            <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
+        </Grid>
+        <Button HorizontalAlignment="Center" Content="Registrarse" x:Name="BotonRegistrar" Padding="5px" Click="Boton_OnClick">
+                <Button.Margin>
+                    <Thickness Top="10" Bottom="10"/>
+                </Button.Margin>
+            </Button>
+            <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="BotonIngresar_OnClick">
+                <Button.Margin>
+                    <Thickness Top="10" Bottom="10"/>
+                </Button.Margin>
+            </Button>
+    </StackPanel>
 </Window>
