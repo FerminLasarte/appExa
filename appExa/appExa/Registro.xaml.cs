@@ -10,6 +10,7 @@ namespace appExa
         public Registro()
         {
             InitializeComponent();
+            aa
         }
 
         SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
