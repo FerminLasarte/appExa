@@ -10,11 +10,15 @@ none
 false
 DEBUG;TRACE
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\App.xaml
-2-1045689850
+31376175348
 
+<<<<<<< Updated upstream
 51953347803
+=======
+81105630467
+>>>>>>> Stashed changes
 91476963571
-MainWindow.xaml;Ventana1.xaml;
+MainWindow.xaml;Registro.xaml;Ventana1.xaml;
 
-True
+False
 

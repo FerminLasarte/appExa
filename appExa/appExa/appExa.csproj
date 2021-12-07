@@ -50,6 +50,14 @@
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
         </ApplicationDefinition>
+<<<<<<< Updated upstream
+=======
+        <Compile Include="Articulo.cs" />
+        <Compile Include="Compra.cs" />
+        <Compile Include="Registro.xaml.cs">
+          <DependentUpon>Registro.xaml</DependentUpon>
+        </Compile>
+>>>>>>> Stashed changes
         <Compile Include="Ventana1.xaml.cs">
           <DependentUpon>Ventana1.xaml</DependentUpon>
         </Compile>
@@ -65,6 +73,7 @@
             <DependentUpon>MainWindow.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Page Include="Registro.xaml" />
         <Page Include="Ventana1.xaml" />
     </ItemGroup>
     <ItemGroup>
