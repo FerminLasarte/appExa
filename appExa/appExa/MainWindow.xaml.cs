@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows;
 using System.Data.SqlClient;
+
 namespace appExa
 {
     /// <summary>
@@ -9,7 +10,6 @@ namespace appExa
     /// </summary>
     public partial class MainWindow
     {
-        
         private const string User = "root";
         private const string Contrasena = "toor";
         
@@ -18,6 +18,7 @@ namespace appExa
             InitializeComponent();
         }
         
+
         private void Boton_OnClick(object sender, RoutedEventArgs e)
         {
             Registro registro = new Registro();
