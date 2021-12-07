@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:appExa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="400" Width="600">
     <StackPanel VerticalAlignment="Center">
         <Label x:Name="NameLabel" Content="" FontWeight="Bold"/>
         <Grid>
@@ -18,14 +18,14 @@
             <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
         </Grid>
         <Button HorizontalAlignment="Center" Content="Registrarse" x:Name="BotonRegistrar" Padding="5px" Click="Boton_OnClick">
-                <Button.Margin>
-                    <Thickness Top="10" Bottom="10"/>
-                </Button.Margin>
-            </Button>
-            <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="BotonIngresar_OnClick">
-                <Button.Margin>
-                    <Thickness Top="10" Bottom="10"/>
-                </Button.Margin>
-            </Button>
+            <Button.Margin>
+                <Thickness Top="10" Bottom="10"/>
+            </Button.Margin>
+        </Button>
+        <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="BotonIngresar_OnClick">
+            <Button.Margin>
+                <Thickness Top="10" Bottom="10"/>
+            </Button.Margin>
+        </Button>
     </StackPanel>
 </Window>
