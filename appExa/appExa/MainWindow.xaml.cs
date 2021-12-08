@@ -2,6 +2,8 @@
 using System.Data;
 using System.Windows;
 using System.Data.SqlClient;
+using System.Windows.Input;
+
 namespace appExa
 {
     /// <summary>
@@ -41,6 +43,16 @@ namespace appExa
                 MessageBox.Show("El usuario y/o la contrasena son incorrectos");
             }
             sqlCon.Close();
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void Cerrar_OnClick(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 } 

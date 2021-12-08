@@ -58,3 +58,10 @@ D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa_MarkupCompile.
 D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa_MarkupCompile.lref
 D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa.exe
 D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa.pdb
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\MaterialDesignColors.dll
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\MaterialDesignColors.pdb
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\App.baml
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa.csproj.CopyComplete
