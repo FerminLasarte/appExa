@@ -20,7 +20,7 @@ namespace appExa
             InitializeComponent();
         }
         
-        private void Boton_OnClick(object sender, RoutedEventArgs e)
+        private void BotonRegistrar_OnClick(object sender, RoutedEventArgs e)
         {
             Registro registro = new Registro();
             registro.Show();

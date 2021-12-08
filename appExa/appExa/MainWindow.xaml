@@ -22,34 +22,37 @@
             <StackPanel Width="350">
                 <StackPanel Margin="-10 40">
                     <TextBlock Text="Iniciar Sesion" Margin="20" Foreground="Bisque" TextAlignment="Center" FontSize="38" FontFamily="Courier New" />
-                    <StackPanel Orientation="Horizontal" Margin="10">
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
                         <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="Azure" />
                         <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario / Email" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="10">
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
                         <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
                         <PasswordBox x:Name="PasswordBox" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                     </StackPanel>
                     <StackPanel Margin="10" HorizontalAlignment="Center">
-                        <Button Height="30" Width="200" HorizontalAlignment="Left" Background="Transparent" FontSize="14" FontWeight="DemiBold"
+                        <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" HorizontalAlignment="Left" Background="Transparent" FontSize="14" FontWeight="DemiBold"
                                 Content="¿Olvidaste tu contraseña?" BorderThickness="0" Margin="0 1.5 0 0" Cursor="Hand" />
                     </StackPanel>
                     <StackPanel Margin="10" HorizontalAlignment="Center">
                         <Button Width="100" Height="40" Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Bisque"
-                                Background="Azure" Foreground="Chocolate" ToolTip="Ingresar" x:Name="Ingresar" Click="BotonIngresar_OnClick" Content="Ingresar">
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="0" Background="Azure"
+                                Foreground="Chocolate" Click="BotonIngresar_OnClick" Content="Ingresar">
                         </Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal"  Margin="10" HorizontalAlignment="Center">
                         <Label Height="25" FontSize="14" HorizontalAlignment="Right" Foreground="Azure" FontWeight="DemiBold">¿No tenes una cuenta?</Label>
-                        <Button Height="30" Width="100" HorizontalAlignment="Left" Background="Transparent" FontSize="14" FontWeight="DemiBold" Content="Registrate"
-                                BorderThickness="0" Margin="0 1.5 0 0" Cursor="Hand" />
+                        <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" HorizontalAlignment="Left" Background="Transparent"
+                                FontSize="14" FontWeight="DemiBold" Content="Registrate" BorderThickness="0" 
+                                Margin="0 1.5 0 0" Cursor="Hand" x:Name="Registrar" Click="BotonRegistrar_OnClick"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
             <StackPanel Width="100">
                 <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
-                        ToolTip="Close" x:Name="Cerrar" Click="Cerrar_OnClick">
+                        x:Name="Cerrar" Click="Cerrar_OnClick">
                     <materialDesign:PackIcon Kind="Close" Foreground="Azure" Width="20" Height="20" />
                 </Button>
             </StackPanel>
