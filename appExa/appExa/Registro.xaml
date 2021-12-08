@@ -25,23 +25,23 @@
                             <TextBox x:Name="Nombre" Margin="10 0" materialDesign:HintAssist.Hint="Nombre" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="10">
-                            <materialDesign:PackIcon Kind="Users" Width="25" Height="25" Foreground="Azure" />
+                            <materialDesign:PackIcon Kind="Face" Width="25" Height="25" Foreground="Azure" />
                             <TextBox x:Name="Apellido" Margin="10 0" materialDesign:HintAssist.Hint="Apellido" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                     </StackPanel>
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                         <StackPanel Orientation="Horizontal" Margin="10">
-                            <materialDesign:PackIcon Kind="Face" Width="25" Height="25" Foreground="Azure" />
+                            <materialDesign:PackIcon Kind="Email" Width="25" Height="25" Foreground="Azure" />
                             <TextBox x:Name="Email" Margin="10 0" materialDesign:HintAssist.Hint="Email" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="10">
-                            <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
+                            <materialDesign:PackIcon Kind="Users" Width="25" Height="25" Foreground="Azure" />
                             <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                     </StackPanel>
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                         <StackPanel Orientation="Horizontal" Margin="10">
-                            <materialDesign:PackIcon Kind="Email" Width="25" Height="25" Foreground="Azure" />
+                            <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
                             <PasswordBox x:Name="Contrasena" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" 
                                          Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>

@@ -16,7 +16,6 @@ namespace appExa
         SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
         private void BotonRegistrarse_OnClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Llega");
             if (this.Contrasena.Password == this.ConfirmContrasena.Password)
             {
                 sqlCon.Open();
@@ -25,7 +24,9 @@ namespace appExa
                 comando.ExecuteNonQuery();
                 sqlCon.Close();
                 this.Close();
+                
             }
+            MessageBox.Show("Usuario registrado con exito");
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
