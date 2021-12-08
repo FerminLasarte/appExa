@@ -2,6 +2,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows;
+using System.Windows.Input;
 
 namespace appExa
 {
@@ -13,17 +14,22 @@ namespace appExa
         }
 
         SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
-        private void BotonIngresar_OnClick(object sender, RoutedEventArgs e)
+        private void BotonRegistrarse_OnClick(object sender, RoutedEventArgs e)
         {
-            if (this.PasswordBox.Password == this.ConfirmPasswordBox.Password)
+            if (this.Contrasena.Password == this.ConfirmContrasena.Password)
             {
                 sqlCon.Open();
-                string consulta = "insert into Usuario values ("+Id_Usuario.Text+", '"+Nombre.Text+"', '"+Usuario.Text+"', '"+PasswordBox.Password+"')";
+                string consulta = "insert into Usuario values ("+Nombre.Text+", '"+Apellido.Text+"', '"+Email.Text+"', '"+Usuario.Text+"', '"+Contrasena.Password+"')";
                 SqlCommand comando = new SqlCommand(consulta, sqlCon);
                 comando.ExecuteNonQuery();
                 sqlCon.Close();
                 this.Close();
             }
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

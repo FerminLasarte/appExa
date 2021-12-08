@@ -4,36 +4,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:appExa"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Registro" Height="450" Width="800">
-    <StackPanel VerticalAlignment="Center">
-        <Label x:Name="NameLabel" Content="" FontWeight="Bold"/>
-        <Grid>
-            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="60px" Content = "Nombre: "/>
-            <TextBox Grid.Column="0" Grid.Row="0" x:Name="Nombre" Height="20px" Width="350px"/>
-        </Grid>
-        <Grid>
-            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="60px" Content = "Usuario: "/>
-            <TextBox Grid.Column="0" Grid.Row="0" x:Name="Usuario" Height="20px" Width="350px"/>
-        </Grid>
-        <Grid>
-            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="60px" Content = "DNI: "/>
-            <TextBox Grid.Column="0" Grid.Row="0" x:Name="Id_Usuario" Height="20px" Width="350px"/>
-        </Grid>
-        <Grid>
-            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="80px" Content = "Contraseña: "/>
-            <PasswordBox x:Name="PasswordBox" Height="20px" Width="350px"/>
-            <TextBlock x:Name="StatusText" Margin="10" HorizontalAlignment="Center"/>
-        </Grid>
-        <Grid>
-            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Width="130px" Content = "Confirmar Contraseña: "/>
-            <PasswordBox x:Name="ConfirmPasswordBox" Height="20px" Width="350px"/>
-            <TextBlock x:Name="ConfirmStatusText" Margin="10" HorizontalAlignment="Center"/>
-        </Grid>
-        <Button HorizontalAlignment="Center" Content="Ingresar" x:Name="BotonIngresar" Padding="5px" Click="BotonIngresar_OnClick">
-            <Button.Margin>
-                <Thickness Top="10" Bottom="10"/>
-            </Button.Margin>
-        </Button>
-    </StackPanel>
+        Title="Registro" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid MouseDown="Border_MouseDown">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#F8C471" Offset="1"/>
+                <GradientStop Color="#E74C3C" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#E67E22" MouseDown="Border_MouseDown"/>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="700">
+                <StackPanel Margin="-10 40">
+                    <TextBlock Text="Registrarse" Margin="20" Foreground="Bisque" TextAlignment="Center" FontSize="38" FontFamily="Courier New" />
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Face" Width="25" Height="25" Foreground="Azure" />
+                            <TextBox x:Name="Nombre" Margin="10 0" materialDesign:HintAssist.Hint="Nombre" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Users" Width="25" Height="25" Foreground="Azure" />
+                            <TextBox x:Name="Apellido" Margin="10 0" materialDesign:HintAssist.Hint="Apellido" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Face" Width="25" Height="25" Foreground="Azure" />
+                            <TextBox x:Name="Email" Margin="10 0" materialDesign:HintAssist.Hint="Email" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
+                            <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Email" Width="25" Height="25" Foreground="Azure" />
+                            <PasswordBox x:Name="Contrasena" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" 
+                                         Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="PasswordCheck" Width="25" Height="25" Foreground="Azure" />
+                            <PasswordBox x:Name="ConfirmContrasena" Margin="10 0" materialDesign:HintAssist.Hint="Confirmar Contrasena" 
+                                         Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="10" HorizontalAlignment="Center">
+                    <Button Width="100" Height="40" Style="{StaticResource MaterialDesignRaisedButton}"
+                            materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="0" Background="Azure"
+                            Foreground="Chocolate" Click="BotonRegistrarse_OnClick" Content="Listo">
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>
