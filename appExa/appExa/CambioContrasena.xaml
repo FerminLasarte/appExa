@@ -26,7 +26,7 @@
                     <StackPanel HorizontalAlignment="Center">
                         <StackPanel Orientation="Horizontal" Margin="10">
                             <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
-                            <PasswordBox x:Name="Contrasena" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" 
+                            <PasswordBox x:Name="Contrasena" Margin="10 0" materialDesign:HintAssist.Hint="Nueva Contrasena" 
                                          Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="10">

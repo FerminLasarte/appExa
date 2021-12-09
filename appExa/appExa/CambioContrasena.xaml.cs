@@ -73,7 +73,7 @@ namespace appExa
             if (lector.Read())
             {
                 captcha = CodigoCaptcha();
-                sendMail(Email.Text, "Cambio de contrasena", "Prueba " + captcha);
+                sendMail(Email.Text, "Cambio de contrasena", "Su codigo es: " + captcha);
                 Email.IsReadOnly = true;
             }
             else
