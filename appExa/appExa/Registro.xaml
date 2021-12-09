@@ -18,7 +18,7 @@
         <StackPanel Orientation="Horizontal">
             <StackPanel Width="700">
                 <StackPanel Margin="-10 40">
-                    <TextBlock Text="Registrarse" Margin="20" Foreground="Bisque" TextAlignment="Center" FontSize="38" FontFamily="Courier New" />
+                    <TextBlock Text="Registrarse" Margin="10" Foreground="Bisque" TextAlignment="Center" FontSize="40" FontFamily="Comic Sans MS, Verdana" />
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                         <StackPanel Orientation="Horizontal" Margin="10">
                             <materialDesign:PackIcon Kind="Face" Width="25" Height="25" Foreground="Azure" />

@@ -50,5 +50,11 @@ namespace appExa
         {
             Application.Current.Shutdown();
         }
+
+        private void OlvidarContrasena_OnClick(object sender, RoutedEventArgs e)
+        {
+            CambioContrasena newContrasena = new CambioContrasena();
+            newContrasena.Show();
+        }
     }
 }

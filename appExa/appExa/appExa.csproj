@@ -59,14 +59,19 @@
             <SubType>Designer</SubType>
         </ApplicationDefinition>
         <Compile Include="Articulo.cs" />
+        <Compile Include="CambioContrasena.xaml.cs">
+          <DependentUpon>CambioContrasena.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Captcha.xaml.cs">
+          <DependentUpon>Captcha.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Compra.cs" />
         <Compile Include="Inventario.cs" />
         <Compile Include="Registro.xaml.cs">
           <DependentUpon>Registro.xaml</DependentUpon>
         </Compile>
-        <Compile Include="Ventana1.xaml.cs">
-          <DependentUpon>Ventana1.xaml</DependentUpon>
-        </Compile>
+        <Page Include="CambioContrasena.xaml" />
+        <Page Include="Captcha.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
@@ -80,7 +85,6 @@
             <SubType>Code</SubType>
         </Compile>
         <Page Include="Registro.xaml" />
-        <Page Include="Ventana1.xaml" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs">
