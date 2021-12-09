@@ -16,7 +16,13 @@
         </Grid.Background>
         <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 0 180" Background="#E67E22" MouseDown="Border_MouseDown"/>
         <StackPanel Orientation="Horizontal">
-            <StackPanel Width="700">
+            <StackPanel Width="100">
+                <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                        x:Name="Volver" Click="Volver_OnClick">
+                    <materialDesign:PackIcon Kind="ArrowBack" Foreground="Azure" Width="20" Height="20" />
+                </Button>
+            </StackPanel>
+            <StackPanel Width="600">
                 <StackPanel Margin="-10 40">
                     <TextBlock Text="Registrarse" Margin="10" Foreground="Bisque" TextAlignment="Center" FontSize="40" FontFamily="Comic Sans MS, Verdana" />
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">

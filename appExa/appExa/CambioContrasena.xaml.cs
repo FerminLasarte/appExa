@@ -109,5 +109,10 @@ namespace appExa
         {
             Application.Current.Shutdown();
         }
+        
+        private void Volver_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
