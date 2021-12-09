@@ -11,10 +11,6 @@ namespace appExa
     /// </summary>
     public partial class MainWindow
     {
-        
-        private const string User = "root";
-        private const string Contrasena = "toor";
-        
         public MainWindow()
         {
             InitializeComponent();
@@ -31,7 +27,7 @@ namespace appExa
         private void BotonIngresar_OnClick(object sender, RoutedEventArgs e)
         {
             sqlCon.Open();
-            SqlCommand consulta = new SqlCommand("select Usuario, Password from Usuario where Usuario = @tUsuario AND Password = @tPassword", sqlCon);
+            SqlCommand consulta = new SqlCommand("select Usuario, Contrasena from Usuarios where Usuario = @tUsuario AND Contrasena = @tPassword", sqlCon);
             consulta.Parameters.AddWithValue("@tUsuario", Usuario.Text);
             consulta.Parameters.AddWithValue("@tPassword", PasswordBox.Password);
             SqlDataReader lector = consulta.ExecuteReader();
@@ -55,4 +51,4 @@ namespace appExa
             Application.Current.Shutdown();
         }
     }
-} 
+}

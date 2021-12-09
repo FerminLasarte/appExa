@@ -19,7 +19,7 @@ namespace appExa
             if (this.Contrasena.Password == this.ConfirmContrasena.Password)
             {
                 sqlCon.Open();
-                string consulta = "insert into Usuarios values ("+Nombre.Text+", '"+Apellido.Text+"', '"+Email.Text+"', '"+Usuario.Text+"', '"+Contrasena.Password+"')";
+                string consulta = "insert into Usuarios values ('"+Nombre.Text+"', '"+Apellido.Text+"', '"+Email.Text+"', '"+Usuario.Text+"', '"+Contrasena.Password+"')";
                 SqlCommand comando = new SqlCommand(consulta, sqlCon);
                 comando.ExecuteNonQuery();
                 sqlCon.Close();
@@ -32,6 +32,11 @@ namespace appExa
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+        
+        private void Cerrar_OnClick(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
