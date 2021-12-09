@@ -65,5 +65,3 @@ C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\App.baml
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\appExa.csproj.CopyComplete
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\CambioContrasena.g.cs
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\CambioContrasena.baml
-C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Captcha.g.cs
-C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Captcha.baml

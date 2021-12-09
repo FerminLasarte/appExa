@@ -4,6 +4,7 @@ using System.Xml.Schema;
 using System.Data.SqlClient;
 using System.Net;
 using System.Net.Mail;
+using System.Windows.Input;
 
 namespace appExa
 {
@@ -15,6 +16,8 @@ namespace appExa
         }
         
         SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
+
+        string captcha;
 
         public static void sendMail(string to, string asunto, string body)
         {
@@ -44,10 +47,23 @@ namespace appExa
             }
         }
 
-        private void Confirmar(object sender, RoutedEventArgs e)
+        public string CodigoCaptcha()
         {
-            //sqlCon.Open();
-            //string consulta = "update Usuarios set Contrasena = '" + PasswordBox.Password + "' where Usuario = '"+Usuario.Text+"' OR Email = '"+Usuario.Text+"'";
+            var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var CharArr = new char[8];
+            var random = new Random();
+
+            for (int i = 0; i < CharArr.Length; i++)
+            {
+                CharArr[i] = characters[random.Next(characters.Length)];
+            }
+
+            var resultString = new String(CharArr);
+            return resultString;
+        }
+
+        private void EnviarCaptcha(object sender, RoutedEventArgs e)
+        {
             sqlCon.Open();
             SqlCommand consulta =
                 new SqlCommand("select Usuario, Contrasena from Usuarios where Email = @tEmail", sqlCon);
@@ -56,16 +72,42 @@ namespace appExa
 
             if (lector.Read())
             {
-                sendMail(Email.Text, "Cambio de contrasena", "Prueba");
-                Captcha pantallaCaptcha = new Captcha();
-                pantallaCaptcha.Show();
-                
+                captcha = CodigoCaptcha();
+                sendMail(Email.Text, "Cambio de contrasena", "Prueba " + captcha);
+                Email.IsReadOnly = true;
             }
             else
-            {
+            { 
                 MessageBox.Show("El Email no se encuentra registrado.");
             }
             sqlCon.Close();
+        }
+
+        private void Confirmar(object sender, RoutedEventArgs e)
+        {
+            if (captcha == this.Captcha.Text)
+            {
+                sqlCon.Open();
+                string consulta = "update Usuarios set Contrasena = '"+Contrasena.Password+"' where Email ='"+Email.Text+"'";
+                SqlCommand comando = new SqlCommand(consulta, sqlCon);
+                comando.ExecuteNonQuery();
+                sqlCon.Close();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("El CAPTCHA ingresado no es correcto.");
+            }
+        }
+        
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+        
+        private void Cerrar_OnClick(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

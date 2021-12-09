@@ -6,17 +6,58 @@
         xmlns:local="clr-namespace:appExa"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="CambioContrasena" Height="450" Width="800">
-    <Grid>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
-            <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="Azure" />
-            <TextBox x:Name="Email" Margin="10 0" materialDesign:HintAssist.Hint="Usuario / Email" Foreground="Black" Width="250" Height="25" BorderBrush="Black" CaretBrush="Black" SelectionBrush="Black"/>
-        </StackPanel>
-        <StackPanel Margin="10" HorizontalAlignment="Center">
-            <Button Width="100" Height="40" Style="{StaticResource MaterialDesignRaisedButton}"
-                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="0" Background="Azure"
-                    Foreground="Black" Click="Confirmar" Content="Ingresar">
-            </Button>
+        Title="CambioContrasena" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid MouseDown="Border_MouseDown">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#F8C471" Offset="1"/>
+                <GradientStop Color="#E74C3C" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#E67E22" />
+        <StackPanel Orientation="Horizontal">
+            <StackPanel HorizontalAlignment="Center" Width="700">
+                <StackPanel Margin="-10 40">
+                    <TextBlock Text="Recuperar Contraseña" Margin="10" Foreground="Bisque" TextAlignment="Center" FontSize="40" FontFamily="Comic Sans MS, Verdana" />
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="Azure" />
+                        <TextBox x:Name="Email" Margin="10 0" materialDesign:HintAssist.Hint="Email" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center">
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
+                            <PasswordBox x:Name="Contrasena" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" 
+                                         Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="PasswordCheck" Width="25" Height="25" Foreground="Azure" />
+                            <PasswordBox x:Name="ConfirmContrasena" Margin="10 0" materialDesign:HintAssist.Hint="Confirmar Contrasena" 
+                                         Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="10" HorizontalAlignment="Center">
+                        <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" HorizontalAlignment="Left" Background="Transparent" FontSize="14" FontWeight="DemiBold"
+                                Content="Revelar Captcha" BorderThickness="0" Margin="0 1.5 0 0" x:Name="RevelarCaptcha" Click="EnviarCaptcha" Cursor="Hand" />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="Code" Width="25" Height="25" Foreground="Azure" />
+                        <TextBox x:Name="Captcha" Margin="10 0" materialDesign:HintAssist.Hint="Captcha" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                    </StackPanel>
+                    <StackPanel Margin="10" HorizontalAlignment="Center">
+                        <Button Width="100" Height="40" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="0" Background="Azure"
+                                Foreground="Chocolate" Click="Confirmar" Content="Confirmar">
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="100">
+                <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                        x:Name="Cerrar" Click="Cerrar_OnClick">
+                    <materialDesign:PackIcon Kind="Close" Foreground="Azure" Width="20" Height="20" />
+                </Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>
