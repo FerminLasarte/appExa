@@ -32,6 +32,5 @@ namespace appExa
             get { return _disponibles; }
             set { _disponibles = value; }
         }
-        
     }
 }

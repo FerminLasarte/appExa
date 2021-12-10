@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:appExa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize">
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
@@ -42,7 +42,7 @@
                         </Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal"  Margin="10" HorizontalAlignment="Center">
-                        <Label Height="25" FontSize="14" HorizontalAlignment="Right" Foreground="Azure" FontWeight="DemiBold">¿No tenes una cuenta?</Label>
+                        <Label Height="26" FontSize="14" HorizontalAlignment="Right" Foreground="Azure" FontWeight="DemiBold">¿No tenes una cuenta?</Label>
                         <Button Style="{StaticResource MaterialDesignRaisedButton}"
                                 materialDesign:ButtonAssist.CornerRadius="10" HorizontalAlignment="Left" Background="Transparent"
                                 FontSize="14" FontWeight="DemiBold" Content="Registrate" BorderThickness="0" 

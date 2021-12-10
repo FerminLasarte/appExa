@@ -27,7 +27,7 @@ namespace appExa
         private void BotonIngresar_OnClick(object sender, RoutedEventArgs e)
         {
             sqlCon.Open();
-            SqlCommand consulta = new SqlCommand("select Usuario, Contrasena from Usuarios where Usuario = @tUsuario AND Contrasena = @tPassword", sqlCon);
+            SqlCommand consulta = new SqlCommand("select Usuario, Contrasena from Usuarios where (Usuario = @tUsuario OR Email = @tUsuario) AND Contrasena = @tPassword", sqlCon);
             consulta.Parameters.AddWithValue("@tUsuario", Usuario.Text);
             consulta.Parameters.AddWithValue("@tPassword", PasswordBox.Password);
             SqlDataReader lector = consulta.ExecuteReader();
