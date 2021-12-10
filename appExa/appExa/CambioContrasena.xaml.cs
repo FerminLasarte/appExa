@@ -23,7 +23,7 @@ namespace appExa
         {
             string from = "AppExa2021@hotmail.com";
             string displayName = "AppEXA";
-            
+
             try
             {
                 MailMessage mail = new MailMessage();
@@ -72,6 +72,7 @@ namespace appExa
 
             if (lector.Read())
             {
+                string htmlCode = "<DOCTYPE html>";
                 captcha = CodigoCaptcha();
                 sendMail(Email.Text, "Cambio de contrasena", "Su codigo es: " + captcha);
                 Email.IsReadOnly = true;
