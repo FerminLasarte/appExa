@@ -87,6 +87,9 @@
         <Compile Include="Registro.xaml.cs">
           <DependentUpon>Registro.xaml</DependentUpon>
         </Compile>
+        <Compile Include="VentanaArticulos.xaml.cs">
+          <DependentUpon>VentanaArticulos.xaml</DependentUpon>
+        </Compile>
         <Page Include="CambioContrasena.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
@@ -101,6 +104,7 @@
             <SubType>Code</SubType>
         </Compile>
         <Page Include="Registro.xaml" />
+        <Page Include="VentanaArticulos.xaml" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs">

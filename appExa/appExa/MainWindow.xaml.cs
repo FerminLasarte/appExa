@@ -33,7 +33,11 @@ namespace appExa
             SqlDataReader lector = consulta.ExecuteReader();
 
             if (lector.Read())
-                MessageBox.Show("Inicio de sesion correcto");
+            {
+                VentanaArticulos ventanaArticulos = new VentanaArticulos();
+                ventanaArticulos.Show();
+                this.Close();
+            }
             else
             {
                 MessageBox.Show("El usuario y/o la contrasena son incorrectos");

@@ -45,6 +45,9 @@
                             <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                     </StackPanel>
+                    <StackPanel Visibility="Collapsed">
+                        <Label Height="26" FontSize="14" HorizontalAlignment="Right" Foreground="Azure" FontWeight="DemiBold">¿No tenes una cuenta?</Label>
+                    </StackPanel>
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                         <StackPanel Orientation="Horizontal" Margin="10">
                             <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />

@@ -41,10 +41,9 @@ namespace appExa
 
         private void BotonRegistrarse_OnClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(IsValidEmail(Email.Text).ToString());
+            sqlCon.Open();
             if ((this.Contrasena.Password == this.ConfirmContrasena.Password) && (IsValidEmail(Email.Text)))
             {
-                sqlCon.Open();
                 string consulta = "insert into Usuarios values ('"+Nombre.Text+"', '"+Apellido.Text+"', '"+Email.Text+"', '"+Usuario.Text+"', '"+Contrasena.Password+"')";
                 SqlCommand comando = new SqlCommand(consulta, sqlCon);
                 comando.ExecuteNonQuery();
@@ -61,7 +60,6 @@ namespace appExa
                     MessageBox.Show("Las contrasenas no coinciden.");
                 }
             }
-            
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
