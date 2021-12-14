@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+
 namespace appExa
 {
     public class Compra
@@ -8,19 +10,22 @@ namespace appExa
         private List<Articulo> _articulos;
         private int _numeroCompra;
         private DateTime _fecha;
+        private string _tipoFactura;
 
         public Compra(ref DateTime fecha, int numeroCompra)
         {
             _fecha = fecha;
             _numeroCompra = numeroCompra;
+            _tipoFactura = null;
         }
-        public void AgregarArt(ref Articulo art)
+
+        public void agregarArt(ref Articulo art)
         {
             _articulos.Add(art);
             _precio += art.precio;
         }
-        
-        public void BorrarPos(int pos)
+
+        public void borrarPos(int pos)
         {
             if (pos < _articulos.Count)
             {
@@ -28,5 +33,32 @@ namespace appExa
                 _articulos.RemoveAt(pos);
             }
         }
-    }
+
+        public void imprimirComanda()
+        {
+            // esto tendria q generar un pdf que se imprime
+        }
+
+        public int facturarYGetPrecio(string tipofactura)
+        {
+            _tipoFactura = tipofactura;
+            if (_tipoFactura != "efectivo")
+                try
+                {
+                    // facturar en la afip
+                    
+
+                }
+                catch (Exception e)
+                {
+                    // reintentar
+                    throw;
+                }
+                finally
+                {
+                    // imprimir comprobante fiscal
+                }
+            imprimirComanda();
+            return _precio;
+        }
 }
