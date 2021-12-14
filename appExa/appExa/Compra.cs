@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 namespace appExa
 {
@@ -5,7 +6,14 @@ namespace appExa
     {
         private int _precio;
         private List<Articulo> _articulos;
-        
+        private int _numeroCompra;
+        private DateTime _fecha;
+
+        public Compra(ref DateTime fecha, int numeroCompra)
+        {
+            _fecha = fecha;
+            _numeroCompra = numeroCompra;
+        }
         public void AgregarArt(ref Articulo art)
         {
             _articulos.Add(art);
