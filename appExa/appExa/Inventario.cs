@@ -9,30 +9,35 @@ namespace appExa
     {
         private Articulo[] _datos;
         private int _max = 0;
-        public void setMax(int max)
-        {
+        public void setMax(int max) {
             _datos = new Articulo[max];
             _max = max;
         }
-        public void generarInventario(string path)
-        {
-            using (var reader = new StreamReader(File.OpenRead(@path)))
-            {
-                for (int i = 0; !reader.EndOfStream; i++) {
+        public void generarInventario(string path) {
+            List<Articulo> temp = new List<Articulo>();
+            using (var reader = new StreamReader(File.OpenRead(@path))) {
+                while (!reader.EndOfStream) {
                     string line = reader.ReadLine();
                     var values = line.Split(';');
-                    _datos[i] = new Articulo(values[0], values[1], int.Parse(values[2]));
+                    Articulo agregar = new Articulo(values[0], values[1], int.Parse(values[2]));
+                    temp.Add(agregar);
                 }
+            }
+            setMax(temp.Count);
+            int i=0;
+            foreach (Articulo art in temp) {
+                _datos[i] = art;
+                i++;
             }
         }
 
-        public void agregarAlArchivo(string path, ref Articulo art)
-        {
+        public void agregarAlArchivo(string path, ref Articulo art) {
             using (var writer = new StreamWriter(@path))
-            {
-                string agregar = (art.nombre + ';' + art.categoria + ';' + art.precio);
-                writer.
-            }
+                writer.WriteLine(art.nombre + ';' + art.categoria + ';' + art.precio);
+        }
+
+        public void agregarAlSistema(string path, ref Articulo art) {
+            
         }
 
     }
