@@ -7,37 +7,27 @@ namespace appExa
 {
     public class Inventario
     {
-        private Articulo[] _datos;
-        private int _max = 0;
-        public void setMax(int max) {
-            _datos = new Articulo[max];
-            _max = max;
-        }
+        private List<Articulo> _datos;
         public void generarInventario(string path) {
-            List<Articulo> temp = new List<Articulo>();
-            using (var reader = new StreamReader(File.OpenRead(@path))) {
+            using (var reader = new StreamReader(File.OpenRead(@path))) {   // levanto archivo en lista
                 while (!reader.EndOfStream) {
                     string line = reader.ReadLine();
                     var values = line.Split(';');
                     Articulo agregar = new Articulo(values[0], values[1], int.Parse(values[2]));
-                    temp.Add(agregar);
+                    _datos.Add(agregar);
                 }
             }
-            setMax(temp.Count);
-            int i=0;
-            foreach (Articulo art in temp) {
-                _datos[i] = art;
-                i++;
-            }
         }
-
-        public void agregarAlArchivo(string path, ref Articulo art) {
-            using (var writer = new StreamWriter(@path))
+        public void agregarAlInventario(string path, ref Articulo art) {
+            _datos.Add(art);
+            using (var writer = new StreamWriter(@path)) // agrego al archivo
                 writer.WriteLine(art.nombre + ';' + art.categoria + ';' + art.precio);
         }
-
-        public void agregarAlSistema(string path, ref Articulo art) {
-            
+        public Articulo getPos(int pos) {
+            if ((pos >= 0) || (pos < _datos.Count))
+                return _datos[pos];
+            else
+                return new Articulo("error","error",0); // articulo vacio
         }
 
     }
