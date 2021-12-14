@@ -15,7 +15,9 @@ namespace appExa
         public Compra(ref DateTime fecha, int numeroCompra)
         {
             _fecha = fecha;
+            _precio = 0;
             _numeroCompra = numeroCompra;
+            _articulos = new List<Articulo>();
             _tipoFactura = null;
         }
 
@@ -27,11 +29,8 @@ namespace appExa
 
         public void borrarPos(int pos)
         {
-            if (pos < _articulos.Count)
-            {
-                _precio -= _articulos[pos].precio;
-                _articulos.RemoveAt(pos);
-            }
+            _precio -= _articulos[pos].precio;
+            _articulos.RemoveAt(pos);
         }
 
         public void imprimirComanda()
