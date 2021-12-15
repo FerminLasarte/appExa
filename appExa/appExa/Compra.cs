@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 
+// listado de la compra del cliente
 namespace appExa
 {
     public class Compra
@@ -24,12 +25,12 @@ namespace appExa
         public void agregarArt(ref Articulo art)
         {
             _articulos.Add(art);
-            _precio += art.precio;
+            _precio += art.precioFinal;
         }
 
         public void borrarPos(int pos)
         {
-            _precio -= _articulos[pos].precio;
+            _precio -= _articulos[pos].precioFinal;
             _articulos.RemoveAt(pos);
         }
 
@@ -45,7 +46,7 @@ namespace appExa
                 try
                 {
                     // facturar en la afip
-                    
+
 
                 }
                 catch (Exception e)
@@ -57,7 +58,9 @@ namespace appExa
                 {
                     // imprimir comprobante fiscal
                 }
+
             imprimirComanda();
             return _precio;
         }
+    }
 }

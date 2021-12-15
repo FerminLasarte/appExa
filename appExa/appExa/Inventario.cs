@@ -3,12 +3,18 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows.Shapes;
 
+//conjunto de articulos
 namespace appExa
 {
     public class Inventario
     {
         private List<Articulo> _datos;
-        public void generarInventario(string path) {
+
+        public Inventario()
+        {
+            _datos = new List<Articulo>();
+        }
+        public void cargarInventario(string path) {
             using (var reader = new StreamReader(File.OpenRead(@path))) {   // levanto archivo en lista
                 while (!reader.EndOfStream) {
                     string line = reader.ReadLine();
@@ -23,12 +29,12 @@ namespace appExa
             using (var writer = new StreamWriter(@path)) // agrego al archivo
                 writer.WriteLine(art.nombre + ';' + art.categoria + ';' + art.precio);
         }
-        public Articulo getPos(int pos) {
-            if ((pos >= 0) || (pos < _datos.Count))
-                return _datos[pos];
-            else
-                return new Articulo("error","error",0); // articulo vacio
+        public Articulo getItem(int pos)
+        {
+            Articulo* art = *_datos[pos];
+            if (_datos[pos].disponible && _datos[pos].)
+            
         }
-
+        
     }
 }

@@ -6,14 +6,17 @@ namespace appExa
         private string _categoria;
         private int _precio;
         private bool _disponible;
-        private int _disponibles;
+        private int _stock;
+        private int _descuento;
+        
         public Articulo(string nombre, string categoria, int precio)
         {
             _nombre = nombre;
             _categoria = categoria;
             _precio = precio;
             _disponible = true;
-            _disponibles = 0;
+            _stock = -1;
+            _descuento = 0;
         }
         public string nombre
         {
@@ -35,10 +38,19 @@ namespace appExa
             get { return _precio; }
             set { _precio = value; }
         }
-        public int disponibles
+        public int descuento
         {
-            get { return _disponibles; }
-            set { _disponibles = value; }
+            get { return _descuento; }
+            set { _descuento = value; }
+        }
+        public int precioFinal
+        {
+            get { return _precio*((100-_descuento)/100); }
+        }
+        public int stock
+        {
+            get { return _stock; }
+            set { _stock = value; }
         }
         
     }
