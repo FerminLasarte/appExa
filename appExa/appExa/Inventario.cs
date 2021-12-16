@@ -18,7 +18,7 @@ namespace appExa
             using (var reader = new StreamReader(File.OpenRead(@path))) {   // levanto archivo en lista
                 while (!reader.EndOfStream) {
                     string line = reader.ReadLine();
-                    var values = line.Split(';');
+                    string[] values = line.Split(';');
                     Articulo agregar = new Articulo(values[0], values[1], int.Parse(values[2]));
                     _datos.Add(agregar);
                 }
@@ -29,12 +29,17 @@ namespace appExa
             using (var writer = new StreamWriter(@path)) // agrego al archivo
                 writer.WriteLine(art.nombre + ';' + art.categoria + ';' + art.precio);
         }
+
         public Articulo getItem(int pos)
         {
-            Articulo* art = *_datos[pos];
-            if (_datos[pos].disponible && _datos[pos].)
-            
+            if (_datos[pos].limitado)
+                if (_datos[pos].stock > 0) {
+                    _datos[pos].stock--;
+                    return _datos[pos];
+                } else
+                    return new Articulo($"sinStock {_datos[pos].nombre}", "SinStock", 0);
+            else
+                return _datos[pos];
         }
-        
     }
 }
