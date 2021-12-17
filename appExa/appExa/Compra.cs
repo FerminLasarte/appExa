@@ -37,6 +37,14 @@ namespace appExa
             get { return _articulos[_pos];}
         }
 
+        public int precio
+        {
+            get { return _precio; }
+        }
+        public DateTime fecha
+        {
+            get { return _fecha; }
+        }
         public Compra(ref DateTime fecha, int numeroCompra)
         {
             _fecha = fecha;
