@@ -9,10 +9,11 @@ namespace appExa
     /// </summary>
     public partial class MainWindow
     {
-        
         private const string User = "root";
         private const string Contrasena = "toor";
-        
+        private const string _Path ="/inventario.csv";
+        private Inventario _inventario = new Inventario(_Path);
+        SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
         public MainWindow()
         {
             InitializeComponent();
@@ -23,8 +24,6 @@ namespace appExa
             Registro registro = new Registro();
             registro.Show();
         }
-
-        SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
 
         private void BotonIngresar_OnClick(object sender, RoutedEventArgs e)
         {

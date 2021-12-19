@@ -78,8 +78,6 @@ namespace appExa
                 try
                 {
                     // facturar en la afip
-
-
                 }
                 catch (Exception e)
                 {

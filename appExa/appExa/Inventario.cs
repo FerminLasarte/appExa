@@ -10,11 +10,9 @@ namespace appExa
     {
         private List<Articulo> _datos;
 
-        public Inventario()
+        public Inventario(string path)
         {
             _datos = new List<Articulo>();
-        }
-        public void cargarInventario(string path) {
             using (var reader = new StreamReader(File.OpenRead(@path))) {   // levanto archivo en lista
                 while (!reader.EndOfStream) {
                     string line = reader.ReadLine();
