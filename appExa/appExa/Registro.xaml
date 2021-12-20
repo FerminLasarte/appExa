@@ -24,7 +24,7 @@
             </StackPanel>
             <StackPanel Width="600">
                 <StackPanel Margin="-10 40">
-                    <TextBlock Text="Registrarse" Margin="10" Foreground="Bisque" TextAlignment="Center" FontSize="40" FontFamily="Comic Sans MS, Verdana" />
+                    <TextBlock Text="Registrarse" Margin="10" Foreground="Bisque" TextAlignment="Center" FontSize="40" FontFamily="Roboto Thin" />
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                         <StackPanel Orientation="Horizontal" Margin="10">
                             <materialDesign:PackIcon Kind="Face" Width="25" Height="25" Foreground="Azure" />
@@ -41,7 +41,7 @@
                             <TextBox x:Name="Email" Margin="10 0" materialDesign:HintAssist.Hint="Email" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="10">
-                            <materialDesign:PackIcon Kind="Users" Width="25" Height="25" Foreground="Azure" />
+                            <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="Azure" />
                             <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
                         </StackPanel>
                     </StackPanel>

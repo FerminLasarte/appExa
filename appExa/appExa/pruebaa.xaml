@@ -1,0 +1,170 @@
+<Page x:Class="appExa.pruebaa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:appExa"
+      mc:Ignorable="d"
+      Title="pruebaa" Height="800" Width="1200">
+    <Grid>
+        <!-- Created with Ai->XAML Export Plug-In Version 0.5 (PC/64) -->
+<!-- By Mike Swanson (http://blog.mikeswanson.com/)           -->
+
+<Viewbox Width="600.000" Height="800.000"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Canvas Width="600.000" Height="800.000">
+
+  <Canvas>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 2/<Rectángulo> -->
+  <Path Data="F1 M 600.000,800.000 L 0.000,800.000 L 0.000,0.000 L 600.000,0.000 L 600.000,800.000 Z">
+    <Path.Fill>
+      <LinearGradientBrush MappingMode="Absolute" StartPoint="900.000,-800.000" EndPoint="900.000,0.000">
+        <LinearGradientBrush.GradientStops>
+          <GradientStop Offset="0.00" Color="#ff7f2e17"/>
+          <GradientStop Offset="1.00" Color="#ffd3623b"/>
+        </LinearGradientBrush.GradientStops>
+        <LinearGradientBrush.Transform>
+          <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-600.000,0.000" />
+        </LinearGradientBrush.Transform>
+      </LinearGradientBrush>
+    </Path.Fill>
+  </Path>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 3/<Rectángulo> -->
+  <Path Data="F1 M 273.914,663.690 L 105.810,663.690 C 91.289,663.690 79.517,651.918 79.517,637.397 L 79.517,637.397 C 79.517,622.875 91.289,611.103 105.810,611.103 L 273.914,611.103 C 288.435,611.103 300.207,622.875 300.207,637.397 L 300.207,637.397 C 300.207,651.918 288.435,663.690 273.914,663.690 Z">
+    <Path.Fill>
+      <LinearGradientBrush MappingMode="Absolute" StartPoint="789.862,-663.690" EndPoint="789.862,-611.103">
+        <LinearGradientBrush.GradientStops>
+          <GradientStop Offset="0.00" Color="#ffe8762a"/>
+          <GradientStop Offset="1.00" Color="#ffe28a4f"/>
+        </LinearGradientBrush.GradientStops>
+        <LinearGradientBrush.Transform>
+          <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-600.000,0.000" />
+        </LinearGradientBrush.Transform>
+      </LinearGradientBrush>
+    </Path.Fill>
+  </Path>
+
+  <!-- Capa 3/Iniciar Sesión -->
+  <TextBlock Foreground="#fffffeff" Canvas.Left="86.242" Canvas.Top="185.005" FontSize="48.00" FontFamily="Roboto Thin">Iniciar Sesi�n</TextBlock>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 4/<Trazado> -->
+  <Path StrokeThickness="1.0" Stroke="#fffffeff" StrokeMiterLimit="1.0" Fill="#fffffeff" Data="F1 M 90.500,358.500 L 456.500,358.500 L 90.500,358.500 Z"/>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 5/<Trazado> -->
+  <Path StrokeThickness="1.0" Stroke="#fffffeff" StrokeMiterLimit="1.0" Fill="#fffffeff" Data="F1 M 90.169,438.500 L 456.169,438.500 L 90.169,438.500 Z"/>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 6/Usuario / Email -->
+  <TextBlock Foreground="#fffffeff" Canvas.Left="89.871" Canvas.Top="333.881" FontSize="20.00" FontFamily="Roboto Thin">Usuario / Email</TextBlock>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 7/Contraseña -->
+  <TextBlock Foreground="#fffffeff" Canvas.Left="90.419" Canvas.Top="414.704" FontSize="20.00" FontFamily="Roboto Thin">Cont</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="131.659" Canvas.Top="414.704" FontSize="20.00" FontFamily="Roboto Thin">r</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="137.958" Canvas.Top="414.704" FontSize="20.00" FontFamily="Roboto Thin">ase�a</TextBlock>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 8/Ingresar -->
+  <TextBlock Foreground="#fffffeff" Canvas.Left="153.903" Canvas.Top="624.930" FontSize="20.00" FontFamily="Roboto Light">Ing</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="181.306" Canvas.Top="624.930" FontSize="20.00" FontFamily="Roboto Light">r</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="187.849" Canvas.Top="624.930" FontSize="20.00" FontFamily="Roboto Light">esar</TextBlock>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 9/<Rectángulo> -->
+  <Path Data="F1 M 459.000,24.000 L 559.500,24.000 C 567.508,24.000 574.000,30.492 574.000,38.500 L 574.000,38.500 C 574.000,46.508 567.508,53.000 559.500,53.000 L 459.000,53.000 L 459.000,24.000 Z">
+    <Path.Fill>
+      <LinearGradientBrush MappingMode="Absolute" StartPoint="1116.500,-24.000" EndPoint="1116.500,-53.000">
+        <LinearGradientBrush.GradientStops>
+          <GradientStop Offset="0.00" Color="#ffcdb2a1"/>
+          <GradientStop Offset="1.00" Color="#ff7f746c"/>
+        </LinearGradientBrush.GradientStops>
+        <LinearGradientBrush.Transform>
+          <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-600.000,0.000" />
+        </LinearGradientBrush.Transform>
+      </LinearGradientBrush>
+    </Path.Fill>
+  </Path>
+
+  <!-- Capa 9/<Rectángulo> -->
+  <Path Data="F1 M 459.000,53.000 L 358.500,53.000 C 350.492,53.000 344.000,46.508 344.000,38.500 L 344.000,38.500 C 344.000,30.492 350.492,24.000 358.500,24.000 L 459.000,24.000 L 459.000,53.000 Z">
+    <Path.Fill>
+      <LinearGradientBrush MappingMode="Absolute" StartPoint="1001.500,-53.000" EndPoint="1001.500,-24.000">
+        <LinearGradientBrush.GradientStops>
+          <GradientStop Offset="0.00" Color="#ffe8782c"/>
+          <GradientStop Offset="1.00" Color="#ffe2884c"/>
+        </LinearGradientBrush.GradientStops>
+        <LinearGradientBrush.Transform>
+          <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-600.000,0.000" />
+        </LinearGradientBrush.Transform>
+      </LinearGradientBrush>
+    </Path.Fill>
+  </Path>
+
+  <Canvas>
+
+  <!-- Capa 9/Capa 10/Iniciar Sesión -->
+  <TextBlock Foreground="#fffffeff" Canvas.Left="368.650" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">I</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="371.639" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">niciar </TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="401.542" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">S</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="407.530" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">esi�n</TextBlock>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 9/Capa 11/Registrarse -->
+  <TextBlock Foreground="#fffffeff" Canvas.Left="488.990" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">R</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="495.494" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">e</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="501.506" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">g</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="508.142" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">ist</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="519.673" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">r</TextBlock>
+  <TextBlock Foreground="#fffffeff" Canvas.Left="523.537" Canvas.Top="30.598" FontSize="12.00" FontFamily="Myriad Pro">arse</TextBlock>
+
+  </Canvas>
+
+  </Canvas>
+
+  <Canvas>
+
+  <!-- Capa 12/<Trazado compuesto> -->
+  <Path Fill="#fffffeff" Data="F1 M 75.335,424.000 L 70.697,424.000 L 70.697,422.571 C 70.697,421.350 71.737,420.357 73.016,420.357 C 74.295,420.357 75.335,421.350 75.335,422.571 L 75.335,424.000 Z M 73.016,430.429 C 72.193,430.429 71.520,429.786 71.520,429.000 C 71.520,428.214 72.193,427.571 73.016,427.571 C 73.839,427.571 74.512,428.214 74.512,429.000 C 74.512,429.786 73.839,430.429 73.016,430.429 Z M 77.504,424.000 L 76.756,424.000 L 76.756,422.571 C 76.756,420.600 75.081,419.000 73.016,419.000 C 70.952,419.000 69.276,420.600 69.276,422.571 L 69.276,424.000 L 68.528,424.000 C 67.705,424.000 67.032,424.643 67.032,425.429 L 67.032,432.571 C 67.032,433.357 67.705,434.000 68.528,434.000 L 77.504,434.000 C 78.327,434.000 79.000,433.357 79.000,432.571 L 79.000,425.429 C 79.000,424.643 78.327,424.000 77.504,424.000 Z"/>
+
+  <!-- Capa 12/<Trazado compuesto> -->
+  <Path Fill="#fffffeff" Data="F1 M 73.000,348.375 C 70.664,348.375 66.000,349.631 66.000,352.125 L 66.000,354.000 L 80.000,354.000 L 80.000,352.125 C 80.000,349.631 75.336,348.375 73.000,348.375 Z M 73.000,346.500 C 74.934,346.500 76.500,344.822 76.500,342.750 C 76.500,340.678 74.934,339.000 73.000,339.000 C 71.066,339.000 69.500,340.678 69.500,342.750 C 69.500,344.822 71.066,346.500 73.000,346.500 Z"/>
+
+  </Canvas>
+</Canvas>
+</Viewbox>
+    </Grid>
+</Page>

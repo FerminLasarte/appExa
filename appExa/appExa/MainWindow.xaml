@@ -6,47 +6,51 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:appExa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="800" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize">
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
-            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
-                <GradientStop Color="#F8C471" Offset="1"/>
-                <GradientStop Color="#E74C3C" Offset="0"/>
+            <LinearGradientBrush MappingMode="Absolute" StartPoint="900.000,-800.000" EndPoint="900.000,0.000">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.00" Color="#ff7f2e17"/>
+                    <GradientStop Offset="1.00" Color="#ffd3623b"/>
+                </LinearGradientBrush.GradientStops>
+                <LinearGradientBrush.Transform>
+                    <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-600.000,0.000" />
+                </LinearGradientBrush.Transform>
             </LinearGradientBrush>
         </Grid.Background>
-        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#E67E22" />
         <StackPanel Orientation="Horizontal">
-            <StackPanel Width="350">
+            <StackPanel Width="600">
                 <Image Source="" />
             </StackPanel>
-            <StackPanel Width="350">
-                <StackPanel Margin="-10 40">
-                    <TextBlock Text="Iniciar Sesion" Margin="10" Foreground="Bisque" TextAlignment="Center" FontSize="40" FontFamily="Roboto Thin" />
-                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
-                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="Azure" />
-                        <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario / Email" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+            <StackPanel Width="500">
+                <StackPanel Margin="10 40">
+                    <TextBlock Text="Iniciar Sesión" Margin="30 80 0 10" Foreground="#ffffff" TextAlignment="Left" FontSize="70" FontFamily="Roboto Thin" />
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="30 70 0 0">
+                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="#ffffff" />
+                        <TextBox x:Name="Usuario" Margin="10 0" materialDesign:HintAssist.Hint="Usuario / Email" Foreground="#ffffff" Width="250" BorderBrush="#ffffff" CaretBrush="#ffffff" SelectionBrush="#ffffff"/>
                     </StackPanel>
-                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
-                        <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="Azure" />
-                        <PasswordBox x:Name="PasswordBox" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" Foreground="Azure" Width="250" BorderBrush="White" CaretBrush="Azure" SelectionBrush="Azure"/>
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="30 70 0 0">
+                        <materialDesign:PackIcon Kind="Password" Width="25" Height="25" Foreground="#ffffff" />
+                        <PasswordBox x:Name="PasswordBox" Margin="10 0" materialDesign:HintAssist.Hint="Contrasena" Foreground="#ffffff" Width="250" BorderBrush="#ffffff" CaretBrush="#ffffff" SelectionBrush="#ffffff"/>
                     </StackPanel>
-                    <StackPanel Margin="10" HorizontalAlignment="Center">
+                    <StackPanel HorizontalAlignment="Left" Margin="90 10 0 0">
                         <Button Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" HorizontalAlignment="Left" Background="Transparent" FontSize="14" FontFamily="Roboto"
-                                Content="¿Olvidaste tu contraseña?" BorderThickness="0" Margin="0 1.5 0 0" x:Name="OlvidarContrasena" Click="OlvidarContrasena_OnClick" Cursor="Hand" />
+                                materialDesign:ButtonAssist.CornerRadius="20" HorizontalAlignment="Left" Foreground="#ffffff" Background="Transparent" FontSize="12" FontFamily="Roboto"
+                                Content="¿Olvidaste tu contraseña?" BorderThickness="0" Margin="0" x:Name="OlvidarContrasena" Click="OlvidarContrasena_OnClick" Cursor="Hand" />
                     </StackPanel>
-                    <StackPanel Margin="10" HorizontalAlignment="Center">
-                        <Button Width="100" Height="40" Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="0" Background="Azure"
-                                Foreground="Chocolate" Click="BotonIngresar_OnClick" Content="Ingresar">
+                    <StackPanel Margin="30 70 0 0" HorizontalAlignment="Left">
+                        <Button Width="150" Height="40" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="20" BorderThickness="0" Background="#ffe28a4f"
+                                Foreground="#ffffff" Click="BotonIngresar_OnClick" Content="Ingresar">
                         </Button>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal"  Margin="10" HorizontalAlignment="Center">
-                        <Label Height="26" FontSize="14" HorizontalAlignment="Right" Foreground="Azure" FontFamily="Roboto">¿No tenes una cuenta?</Label>
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="30 70 0 0">
+                        <Label FontSize="14" Foreground="Azure" FontFamily="Roboto">¿No tenes una cuenta?</Label>
                         <Button Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" HorizontalAlignment="Left" Background="Transparent"
+                                materialDesign:ButtonAssist.CornerRadius="10" Foreground="Azure" Background="Transparent"
                                 FontSize="14" FontFamily="Roboto" Content="Registrate" BorderThickness="0" 
-                                Margin="0 1.5 0 0" Cursor="Hand" x:Name="Registrar" Click="BotonRegistrar_OnClick"/>
+                                Margin="0  0 0 0" Cursor="Hand" x:Name="Registrar" Click="BotonRegistrar_OnClick"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
