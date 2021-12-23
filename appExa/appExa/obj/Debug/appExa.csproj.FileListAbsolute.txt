@@ -58,3 +58,22 @@ D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa_MarkupCompile.
 D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa_MarkupCompile.lref
 D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa.exe
 D:\santy\Documents\FACULTAD\appExa\appExa\appExa\obj\Debug\appExa.pdb
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\bin\Debug\appExa.exe.config
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\bin\Debug\appExa.exe
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\bin\Debug\appExa.pdb
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\MainWindow.g.cs
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\Registro.g.cs
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\Ventana1.g.cs
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\App.g.cs
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa_MarkupCompile.cache
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa_MarkupCompile.lref
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\MainWindow.baml
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\Registro.baml
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\Ventana1.baml
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.g.resources
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.Properties.Resources.resources
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.csproj.GenerateResource.cache
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.exe
+C:\Users\usuario\Documents\Prog Facultad\appExa\appExa\appExa\obj\Debug\appExa.pdb

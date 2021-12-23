@@ -11,7 +11,7 @@ namespace appExa
     {
         private const string User = "root";
         private const string Contrasena = "toor";
-        private const string _Path ="/inventario.csv";
+        private const string _Path ="C:/Users/usuario/Documents/Prog Facultad/appExa/appExa/appExa/inventario.csv";
         private Inventario _inventario = new Inventario(_Path);
         SqlConnection sqlCon = new SqlConnection("server = DESKTOP-BRILGCD\\SERVIDORAPPEXA; database = BaseEXA; integrated security = true;");
         public MainWindow()
@@ -27,14 +27,18 @@ namespace appExa
 
         private void BotonIngresar_OnClick(object sender, RoutedEventArgs e)
         {
-            sqlCon.Open();
+            /*sqlCon.Open();}
             SqlCommand consulta = new SqlCommand("select Usuario, Password from Usuario where Usuario = @tUsuario AND Password = @tPassword", sqlCon);
             consulta.Parameters.AddWithValue("@tUsuario", Usuario.Text);
             consulta.Parameters.AddWithValue("@tPassword", PasswordBox.Password);
             SqlDataReader lector = consulta.ExecuteReader();
-
-            if (lector.Read())
-                MessageBox.Show("Inicio de sesion correcto");
+*/
+            if (/*lector.Read() ||*/ (Usuario.Text == User && PasswordBox.Password == Contrasena))
+            {
+                //MessageBox.Show("Inicio de sesion correcto");
+                Ventana1 menu = new Ventana1();
+                menu.Show();
+            }
             else
             {
                 MessageBox.Show("El usuario y/o la contrasena son incorrectos");

@@ -13,7 +13,7 @@ namespace appExa
         public Inventario(string path)
         {
             _datos = new List<Articulo>();
-            using (var reader = new StreamReader(File.OpenRead(@path))) {   // levanto archivo en lista
+            using (var reader = new StreamReader(@path)) {   // levanto archivo en lista
                 while (!reader.EndOfStream) {
                     string line = reader.ReadLine();
                     string[] values = line.Split(';');
