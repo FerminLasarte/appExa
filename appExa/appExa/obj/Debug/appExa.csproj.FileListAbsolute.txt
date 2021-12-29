@@ -77,3 +77,5 @@ C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\MimeKit.xml
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\bin\Debug\System.Buffers.xml
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\VentanaArticulos.g.cs
 C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\VentanaArticulos.baml
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Registrarse.g.cs
+C:\Users\fermi\Documents\GitHub\appExa\appExa\appExa\obj\Debug\Registrarse.baml

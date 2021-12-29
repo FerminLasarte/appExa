@@ -5,8 +5,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:appExa"
         mc:Ignorable="d"
-        Title="VentanaArticulos" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
-    <Grid>
-        
+        Title="VentanaArticulos" Height="800" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanMinimize">
+    <Grid MouseDown="Border_MouseDown">
+        <Grid.Background>
+            <LinearGradientBrush MappingMode="Absolute" StartPoint="900.000,-800.000" EndPoint="900.000,0.000">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.00" Color="#ff7f2e17"/>
+                    <GradientStop Offset="1.00" Color="#ffd3623b"/>
+                </LinearGradientBrush.GradientStops>
+                <LinearGradientBrush.Transform>
+                    <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-600.000,0.000" />
+                </LinearGradientBrush.Transform>
+            </LinearGradientBrush>
+        </Grid.Background>
     </Grid>
 </Window>

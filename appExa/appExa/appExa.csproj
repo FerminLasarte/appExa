@@ -84,6 +84,9 @@
         </Compile>
         <Compile Include="Compra.cs" />
         <Compile Include="Inventario.cs" />
+        <Compile Include="Registrarse.xaml.cs">
+          <DependentUpon>Registrarse.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Registro.xaml.cs">
           <DependentUpon>Registro.xaml</DependentUpon>
         </Compile>
@@ -103,6 +106,7 @@
             <DependentUpon>MainWindow.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Page Include="Registrarse.xaml" />
         <Page Include="Registro.xaml" />
         <Page Include="VentanaArticulos.xaml" />
     </ItemGroup>

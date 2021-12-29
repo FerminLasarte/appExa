@@ -34,10 +34,9 @@ namespace appExa
 
             if (lector.Read())
             {
-                MessageBox.Show("Ingreso correcto");
-                //VentanaArticulos ventanaArticulos = new VentanaArticulos();
-                //ventanaArticulos.Show();
-                //this.Close();
+                VentanaArticulos ventanaArticulos = new VentanaArticulos();
+                ventanaArticulos.Show();
+                this.Close();
             }
             else
             {

@@ -1,4 +1,5 @@
 using System.Windows;
+using System.Windows.Input;
 
 namespace appExa
 {
@@ -7,6 +8,11 @@ namespace appExa
         public VentanaArticulos()
         {
             InitializeComponent();
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }
