@@ -46,7 +46,7 @@
                         </Button>
                     </StackPanel>
                     <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="30 70 0 0">
-                        <TextBlock FontSize="14" Foreground="Azure" FontFamily="Roboto">¿No tenes una cuenta?</TextBlock>
+                        <TextBlock FontSize="14" Foreground="#ffffff" FontFamily="Roboto" Margin="0 7 0 0">¿No tenes una cuenta?</TextBlock>
                         <Button Style="{StaticResource MaterialDesignRaisedButton}" Foreground="#ffffff" Background="Transparent"
                                 FontSize="14" FontFamily="Roboto" Content="Registrate" BorderThickness="0" Cursor="Hand" x:Name="Registrar" Click="BotonRegistrar_OnClick"/>
                     </StackPanel>
